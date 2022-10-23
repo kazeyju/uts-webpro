@@ -1,0 +1,261 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- into section -->
+    <div
+      class="relative overflow-hidden h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900"
+    >
+      <!-- navbar -->
+      <nav class="fixed top-0 z-10 w-full bg-white dark:bg-slate-900">
+        <div class="container flex items-center justify-between py-5 mx-auto">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Port-folio</span
+            >
+          </div>
+          <ul
+            class="hidden space-x-10 text-sm font-bold text-gray-600 uppercase md:flex dark:text-gray-100"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">homepage</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about">about me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#services">services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#works">works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden w-5 cursor-pointer md:block"
+            alt=""
+          />
+          <div id="hamburger" class="z-20 space-y-1 cursor-pointer md:hidden">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="absolute top-0 left-0 hidden w-full p-10 space-y-10 text-center text-white bg-indigo-900 rounded-b-3xl"
+          >
+            <li>
+              <a id="hLink" href="#">homepage</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              <a id="hLink" href="#services">services</a>
+            </li>
+            <li>
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 right-0 object-cover mx-auto lg:left-0 h-5/6"
+        src="./img/mannn.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="absolute left-0 right-0 hidden mx-auto bg-indigo-900 rounded-full lg:block -bottom-1/4 w-big h-big -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute text-xl font-bold top-1/3 left-5 sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl"
+      >
+        <span class="text-gray-600">Frelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- texts -->
+      <div
+        class="absolute top-0 bottom-0 flex-col hidden w-1/3 gap-5 p-6 m-auto bg-white rounded-md shadow-lg lg:flex right-10 dark:bg-slate-900 dark:shadow-slate-800 h-fit"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hello Universe, I'm Julian Sumangando</h1>
+        <p class="text-gray-400">
+          hy, i’m JULIAN SUMANGANDO, A INDONESIAN people from NORTH SULAWESI. I am a beginner FUllstack web designer, UI Designer, and Mobile Developer. I have honed my skills in Web Development and advance i have core understanding of advance UI design principle.
+
+        </p>
+        <a
+          class="px-3 py-2 text-xl font-semibold text-white bg-indigo-600 rounded-md w-fit"
+          href="#contact"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div
+        class="container flex flex-col-reverse items-center gap-20 py-40 mx-auto lg:flex-row"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="absolute top-0 left-0 h-1/4 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full overflow-hidden rounded-full">
+            <img src="./img/portraittt.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="flex flex-col gap-3 my-auto">
+          <h1 class="font-bold text-indigo-600">ABOUT ME</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Better Experience
+          </h1>
+          <p class="text-gray-400">
+            6+ Month of experience. Specialised in Design apps, while ensuring a seamless
+              web experience for end users.
+          </p>
+          <h2 class="font-medium text-gray-400">HTML</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="font-medium text-gray-400">JAVASRICPT</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="font-medium text-gray-400">CSS</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col items-center gap-3">
+          <h1 class="font-bold text-indigo-600">SERVICES</h1>
+          <h1 class="text-3xl dark:text-white">What do I offer?</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            My approach to website design is to create a website that
+            strengthens your company’s brand while ensuring ease of use and
+            simplicity for your audience.
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="flex flex-wrap justify-between p-5 sm:p-0">
+          <!-- card -->
+          <div
+            class="flex flex-col w-full gap-3 p-5 my-3 rounded-lg shadow-xl md:w-4/12 md:my-10"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="text-lg font-medium dark:text-white">UX / UI Design</h1>
+            <p class="text-gray-400">
+              I design beautiful web iterfaces with Figma and Adove XD
+            </p>
+            <a class="text-sm font-semibold text-indigo-600" href=""
+              >Read More</a
+            >
+          </div>
+          <!-- card -->
+          <div
+            class="flex flex-col w-full gap-3 p-5 my-3 rounded-lg shadow-xl md:w-4/12 md:my-10"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="text-lg font-medium dark:text-white">WEB Design</h1>
+            <p class="text-gray-400">
+              I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS
+            </p>
+            <a class="text-sm font-semibold text-indigo-600" href=""
+              >Read More</a
+            >
+          </div>
+          <!-- card -->
+          <div
+            class="flex flex-col w-full gap-3 p-5 my-3 rounded-lg shadow-xl md:w-4/12 md:my-10"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="text-lg font-medium dark:text-white">MOBILE DEVELOPMENT</h1>
+            <p class="text-gray-400">
+              I am an expert mobile developer. I have experience using Flutter and React Native.
+            </p>
+            <a class="text-sm font-semibold text-indigo-600" href=""
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col items-center gap-3">
+          <h1 class="font-bold text-indigo-600">CONTACT</h1>
+          <h1 class="text-3xl dark:text-white">Have a Question?</h1>
+        </div>
+        <!-- bottom -->
+        <form class="flex flex-col items-center gap-5 p-8 mt-5">
+          <input
+            class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="text"
+            placeholder="Name Surname"
+          />
+          <input
+            class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="w-full p-2 rounded-sm md:w-1/2 ring-1 ring-indigo-300 dark:bg-slate-800 dark:ring-0 dark:text-white"
+            cols="30"
+            rows="3"
+            placeholder="Message..."
+          ></textarea>
+          <button
+            class="w-1/2 px-3 py-2 font-medium text-white bg-indigo-600 rounded-md cursor-pointer"
+          >
+            SEND
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <div class="container flex items-center justify-between py-5 mx-auto">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Port-folio.</span>
+        </div>
+        <span class="hidden font-medium text-white md:block"
+          >© 2022 Port-folio.</span
+        >
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
